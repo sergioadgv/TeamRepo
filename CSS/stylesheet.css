@@ -1,3 +1,43 @@
-#CSS{
-	
+.slide-in-menu{
+	background-color: black;
+	color: white;
+	height: 100%;
+	width: 20%;
+	position: fixed;
+	top: 0;
+	display: none;
+	padding-left: 3%;
+	padding-top: 1%;
+	z-index: 1;
+}
+
+#menu-trigger{
+	margin: 1%;
+	z-index: 1;
+}
+
+.white{
+	color: white;
+}
+
+.transparent{
+	background-color: transparent;
+}
+
+a {
+	color: white!important;
+}
+
+.red{
+	background-color: red;
+}
+
+.social{
+	border-radius: 50%;
+	width: 30%;
+	height: 15%;
+}
+
+.menu-footer{
+	margin-top: auto;
 }
