@@ -31,3 +31,17 @@
 	color:#fff;
 	font-size:12px Arial;
 }
+
+.hidden{
+	display: none;
+}
+
+.trigger{
+	text-align: center;
+	background-color: red;
+	margin-bottom: 2%;
+}
+
+.trigger a {
+	color: black;
+}

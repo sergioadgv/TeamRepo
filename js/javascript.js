@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 // // Tooltip only Text
 // $('.masterTooltip').hover(function(){
 //         // Hover over code
@@ -18,4 +18,19 @@
 //         $('.tooltip')
 //         .css({ top: mousey, left: mousex })
 // });
-// });
+	
+	$("#trigger_1").click(function(){
+
+		$(this).toggleClass('hidden');
+
+		$("#view_2").toggleClass('hidden');
+	});
+
+	$("#trigger_2").click(function(){
+
+		$(this).toggleClass('hidden');
+
+		$("#view_3").toggleClass('hidden');
+	});
+
+});
