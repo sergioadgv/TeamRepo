@@ -63,6 +63,29 @@ $( document ).ready(function() {
 });
 					});
 
+$( document ).ready(function() {
+			$.ajax({
+					url: 'http://api.themoviedb.org/3/search/movie?api_key=76289adfaff9f754d64a41b22a008043&query=love',
+					method: 'GET',
+					// contentType: 'application/json',
+					data: {
+						type:'movie',
+			            r: 'json',
+			            api_key: '76289adfaff9f754d64a41b22a008043',
+					}}).done(function (response_body) {
+						response_body.results.forEach(function(item){
+							console.log(item )
+							var url = item.poster_path;
+							var image = $(document.createElement('img'));
+							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
+	    					// image.attr('class', thumbnail);
+	    					image.appendTo('#romancephoto-container'); 
+						});
+				
+            	
+});
+					});
+
 // var url = item.title;
 							// var title = $(document.createElement('h3'));
 							// title(title);
