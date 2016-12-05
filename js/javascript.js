@@ -37,7 +37,7 @@ $(document).ready(function() {
 
 $( document ).ready(function() {
             $.ajax({
-				  url: 'href="http://api.themoviedb.org/3/discover/movie?',
+				  url: 'href=http://api.themoviedb.org/3/discover/movie?',
 				  method: 'GET',
 				  contentType: 'application/json; charset=UTF-8',
 				  data: {
