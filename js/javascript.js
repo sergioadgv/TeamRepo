@@ -45,9 +45,9 @@ $( document ).ready(function() {
 				    r: 'json',
 				    api_key: '76289adfaff9f754d64a41b22a008043'  
 				  },
-				  success: handleResults (function handleResults(response_body) {
+				  function (response_body) {
  						 console.log(response_body)
-						})
+						}
 				  //Below is the function to append to images: 
 				  	// function handleResults(response_body) {
   					// 	response_body.data.forEach(function(item) {
