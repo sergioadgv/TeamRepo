@@ -36,7 +36,7 @@ $(document).ready(function() {
 });
 
 $( document ).ready(function() {
-            $(.ajax({
+            $.ajax({
 				  url: 'href="http://api.themoviedb.org/3/discover/movie?',
 				  method: 'GET',
 				  contentType: 'application/json; charset=UTF-8',
@@ -55,7 +55,7 @@ $( document ).ready(function() {
     			// 		var image = $(document.createElement('img'));
     			// 		image.attr('src', url)
     			// 		image.appendTo('#photo-container')
-  }))
+  })
 });
 
 
