@@ -36,26 +36,25 @@ $(document).ready(function() {
 });
 
 $( document ).ready(function() {
-            $.ajax({
-				  url: 'href=http://api.themoviedb.org/3/discover/movie?',
-				  method: 'GET',
-				  contentType: 'application/json; charset=UTF-8',
-				  data: {
-				    type:'movie',
-				    r: 'json',
-				    api_key: '76289adfaff9f754d64a41b22a008043'  
-				  },
-				  function (response_body) {
- 						 console.log(response_body)
-						}
-				  //Below is the function to append to images: 
-				  	// function handleResults(response_body) {
-  					// 	response_body.data.forEach(function(item) {
-    			// 		var url = item.images.fixed_height_downsampled.url;
-    			// 		var image = $(document.createElement('img'));
-    			// 		image.attr('src', url)
-    			// 		image.appendTo('#photo-container')
-  })
+			$.ajax({
+					url: 'http://api.themoviedb.org/3/search/movie?api_key=76289adfaff9f754d64a41b22a008043&query=scifi&&movie',
+					method: 'GET',
+					// contentType: 'application/json',
+					data: {
+						type:'movie',
+			            r: 'json',
+			            api_key: '76289adfaff9f754d64a41b22a008043'
+					}}).done(function (response_body) {
+						response_body.results.forEach(function(item){
+							// console.log(item )
+							var url = item.poster_path;
+							var image = $(document.createElement('img'));
+							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
+	    					// image.attr('class', thumbnail);
+	    					image.appendTo('#photo-container'); 
+						});
+				
+            	
 });
-
+					});
 
