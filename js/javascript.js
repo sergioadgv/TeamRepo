@@ -34,3 +34,18 @@ $(document).ready(function() {
 	});
 
 });
+
+$( document ).ready(function() {
+
+            $(.ajax({
+				  url: 'https://api.themoviedb.org/3/movie/550?api_key=76289adfaff9f754d64a41b22a008043',
+				  method: 'GET',
+				  contentType: 'application/json; charset=UTF-8',
+				  data: {
+				    type:'movie',
+				    r: 'json',
+				    api_key: '76289adfaff9f754d64a41b22a008043'  
+				  },
+				  success: handleResults 
+				  	console.log (this)
+			}));
