@@ -36,28 +36,26 @@ $(document).ready(function() {
 });
 
 $( document ).ready(function() {
-
             $(.ajax({
-				  url: 'https://api.themoviedb.org/3/movie/550?api_key=76289adfaff9f754d64a41b22a008043',
+				  url: 'href="http://api.themoviedb.org/3/discover/movie?',
 				  method: 'GET',
 				  contentType: 'application/json; charset=UTF-8',
 				  data: {
 				    type:'movie',
 				    r: 'json',
-				    api_key: '76289adfaff9f754d64a41b22a008043' 
-				    X-RateLimit: 5,  
+				    api_key: '76289adfaff9f754d64a41b22a008043'  
 				  },
-				  success: handleResults 
-				  	function handleResults(response_body) {
-  						response_body.data.forEach(function(item) {
-    					var url = item.images.fixed_height_downsampled.url;
-    					var image = $(document.createElement('img'));
-    					image.attr('src', url)
-    					image.appendTo('#photo-container')
-  }) 
-}
-						}
-
-			}));
+				  success: handleResults (function handleResults(response_body) {
+ 						 console.log(response_body)
+						})
+				  //Below is the function to append to images: 
+				  	// function handleResults(response_body) {
+  					// 	response_body.data.forEach(function(item) {
+    			// 		var url = item.images.fixed_height_downsampled.url;
+    			// 		var image = $(document.createElement('img'));
+    			// 		image.attr('src', url)
+    			// 		image.appendTo('#photo-container')
+  }))
+});
 
 
