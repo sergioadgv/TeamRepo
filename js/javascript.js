@@ -24,7 +24,7 @@ $( document ).ready(function() {
 					data: {
 						type:'movie',
 			            r: 'json',
-			            api_key: '76289adfaff9f754d64a41b22a008043'
+			            api_key: '76289adfaff9f754d64a41b22a008043',
 					}}).done(function (response_body) {
 						response_body.results.forEach(function(item){
 							console.log(item )
@@ -48,7 +48,7 @@ $( document ).ready(function() {
 					data: {
 						type:'movie',
 			            r: 'json',
-			            api_key: '76289adfaff9f754d64a41b22a008043'
+			            api_key: '76289adfaff9f754d64a41b22a008043',
 					}}).done(function (response_body) {
 						response_body.results.forEach(function(item){
 							console.log(item )
