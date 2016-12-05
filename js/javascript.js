@@ -44,8 +44,20 @@ $( document ).ready(function() {
 				  data: {
 				    type:'movie',
 				    r: 'json',
-				    api_key: '76289adfaff9f754d64a41b22a008043'  
+				    api_key: '76289adfaff9f754d64a41b22a008043' 
+				    X-RateLimit: 5,  
 				  },
 				  success: handleResults 
-				  	console.log (this)
+				  	function handleResults(response_body) {
+  						response_body.data.forEach(function(item) {
+    					var url = item.images.fixed_height_downsampled.url;
+    					var image = $(document.createElement('img'));
+    					image.attr('src', url)
+    					image.appendTo('#photo-container')
+  }) 
+}
+						}
+
 			}));
+
+
