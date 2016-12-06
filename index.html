@@ -7,7 +7,6 @@
 		<title>VideoWebsite</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="JChallengestylesheet">
 		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
 	</head>
 	<body>
@@ -35,12 +34,12 @@
     </nav>
   </div> -->
 
-		<div class="container-fluid">
+		<!--<div class="container-fluid">
       <nav id="navbar" class="navbar navbar-inverse coloured navbar-fixed-top text-center">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-1">
-              <span class="glyphicon glyphicon-menu-hamburger" id="#slider_trigger"></span>
+              <span class="glyphicon glyphicon-menu-hamburger" id="#menu-trigger"></span>
             </div>
             <div class="col-md-2">
               <h2>Our MDB</h2>
@@ -63,8 +62,34 @@
             </div>
           </div>
         </div>
-      </nav><br>	
-		</div> 
+      </nav><br>
+      </div>-->
+      <div class="container-fluid">	
+        <div class="text-center slide-in-menu"> 
+          <div class="text-center">
+            <!--<img src="Pizza.jpg" alt="Pizza" class="social">-->
+          </div>
+          <div>
+            <h4><strong><a href="">Your Name</a></strong></h4>
+          </div>
+          <div class="pull-left">
+            <h5 class="white pull-left"><a href="#">Home</a></h5>
+            <h5 class="white"><a href="#">Favorites</a></h5>
+            <div class="dropdown" id="dropper">
+              <a class="dropdown-toggle" data-toggle="dropdown">
+              Genres 
+                <span class="caret"></span>
+                <ul class="dropdown-menu transparent white">
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Horror</a></li>
+                </ul>
+              </a>
+            </div>
+            <h5 class="white"><a href="#">About Us</a></h5>
+        </div>
+      </div> <!--Slide-in Menu-->
+    </div>
 		<div class="container-fluid">
       <div id="movieCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -394,6 +419,5 @@
   		<script type="text/javascript" src="js/javascript.js"></script>
 		  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
