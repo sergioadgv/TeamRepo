@@ -33,6 +33,22 @@ $( document ).ready(function() {
 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
 	    					// image.attr('class', thumbnail);
 	    					image.appendTo('#scifiphoto-container'); 
+	    					
+	    					// var overview = item.overview;
+	    					var popDiv = $(document.createElement('div'));
+	    					popDiv.addClass('view');
+	    					popDiv.appendTo('#scifiphoto-container');
+	    					// overview.appendTo('.view');
+
+
+	    					$(image).hover(function(){
+	    						// $(this).popover('view');
+
+	    					});
+	    					// console.log(overview);
+
+	    					// overview.addClass('.view');
+	    					// overview.appendTo('body');
 						});
 				
             	
