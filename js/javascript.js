@@ -91,3 +91,8 @@ $( document ).ready(function() {
 							// title(title);
 	    		// 			// image.attr('class', thumbnail);
 	    		// 			title.appendTo('#photo-container');
+$( document ).ready(function() {
+	$('.carousel').carousel({
+		interval: 3000
+});
+});
