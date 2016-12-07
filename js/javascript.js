@@ -1,21 +1,3 @@
-$(document).ready(function() {
-	
-	$("#trigger_1").click(function(){
-
-		$(this).toggleClass('hidden');
-
-		$("#view_2").toggleClass('hidden');
-	});
-
-	$("#trigger_2").click(function(){
-
-		$(this).toggleClass('hidden');
-
-		$("#view_3").toggleClass('hidden');
-	});
-
-});
-
 $( document ).ready(function() {
 			$.ajax({
 					url: 'http://api.themoviedb.org/3/search/movie?api_key=76289adfaff9f754d64a41b22a008043&query=scifi',
@@ -29,6 +11,7 @@ $( document ).ready(function() {
 						response_body.results.forEach(function(item){
 							console.log(item )
 
+<<<<<<< HEAD
 
 							var url = item.poster_path;
 							var image = $(document.createElement('img'));
@@ -44,6 +27,22 @@ $( document ).ready(function() {
 	    					//  var para = $(document.createElement('p'));
 	    					//  para.appendTo('#scifiphoto-container');
 	    					//  para.text("hello");
+=======
+							var url = item.poster_path;
+							var image = $(document.createElement('img'));
+							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
+	    					//image.attr('class', thumbnail);
+	    		 			image.addClass('view');
+	    		 			image.appendTo('#scifiphoto-container'); 
+
+		    					var overview = item.overview;
+		    					var popDiv = $(document.createElement('div'));
+		    					popDiv.addClass('view');
+		    					popDiv.appendTo('#scifiphoto-container');
+	    					   	var para = $(document.createElement('p'));
+	    					   	para.appendTo('.view');
+	    					   	para.text("hello");
+>>>>>>> 13f72e7655d74172abe3e5c330f8e997111a6545
 	    			
 
 
@@ -112,3 +111,62 @@ $( document ).ready(function(){
 });
 });
 
+<<<<<<< HEAD
+=======
+// $(document).ready(function(){
+
+// 	console.log("Works");
+            
+
+//     $( "#search" ).click(function() {
+                
+//          var inputtext = $("#search-input").val();
+
+//         console.log(inputtext);
+
+//         $.ajax({
+// 					url: 'http://api.themoviedb.org/3/search/movie?api_key=76289adfaff9f754d64a41b22a008043&',
+// 					method: 'GET',
+// 					contentType: 'application/json',
+// 					s: inputtext,
+// 					data: {
+// 						type:'movie',
+// 			            r: 'json',
+// 			            api_key: '76289adfaff9f754d64a41b22a008043',
+// 					}}).done(function (response_body) {
+// 						response_body.results.forEach(function(item){
+// 							console.log(item )
+// 							var url = item.poster_path;
+// 							var image = $(document.createElement('img'));
+// 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
+// 	    					// image.attr('class', thumbnail);
+// 	    					image.appendTo('#warphoto-container'); 
+// 						});
+// 					});
+// 	});
+// })
+
+//begin slider
+
+// $(document).ready(function(){
+
+// 	console.log("Did you get the memo");
+
+// 	$("#menu-trigger").click(function(){
+
+// 		$(".slide-in-menu").animate({width: 'toggle'});
+
+// 		$(this).toggleClass("white");
+
+// 	});
+
+// 	$("#dropper").click(function(){
+// 		$(this).toggleClass("open");
+// 	});
+
+// 	console.log("Js complete!");
+
+// })
+
+//end slider
+>>>>>>> 13f72e7655d74172abe3e5c330f8e997111a6545
