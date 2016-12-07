@@ -4,6 +4,10 @@
 	border: 1px solid black;
 }*/
 
+body {
+  padding-top: 50px;
+}
+
 h2{
 	color: white;
 }
@@ -78,6 +82,9 @@ h2{
 	color:black;
 }
 
+.carousel-inner {
+	align-content: center; 
+}
 
 .view{
 	width: 200px;
@@ -101,7 +108,12 @@ h2{
 	padding-right: 0 auto;
 	padding-left: 0 auto;
 }
-./*hoverinfo {
+
+.full-width {
+    width: 100%;
+}
+
+/*hoverinfo {
   position: absolute;
   top: 15px;
   left: 15px;
