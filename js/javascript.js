@@ -28,21 +28,21 @@ $( document ).ready(function() {
 					}}).done(function (response_body) {
 						response_body.results.forEach(function(item){
 							console.log(item )
-<<<<<<< HEAD
+
 							// var url = item.poster_path;
 							// var image = $(document.createElement('img'));
 							// image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
 	    		// 			// image.attr('class', thumbnail);
 	    		// 			image.addClass('.view');
 	    		// 			image.appendTo('#scifiphoto-container'); 
-=======
-							var url = item.poster_path;
-							var image = $(document.createElement('img'));
-							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
-	    					// image.attr('class', thumbnail);
-	    					image.addClass('view');
-	    					image.appendTo('#scifiphoto-container'); 
->>>>>>> c7ad15c5721699446e8b8c9437489f1ebc35c8d6
+
+							// var url = item.poster_path;
+							// var image = $(document.createElement('img'));
+							// image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
+	    		// 			// image.attr('class', thumbnail);
+	    		// 			image.addClass('view');
+	    		// 			image.appendTo('#scifiphoto-container'); 
+
 
 		    					var overview = item.overview;
 		    					var popDiv = $(document.createElement('div'));
@@ -50,18 +50,19 @@ $( document ).ready(function() {
 		    					popDiv.appendTo('#scifiphoto-container');
 	    					   	var para = $(document.createElement('p'));
 	    					   	para.appendTo('.view');
+	    					   	para.text("hello");
 	    			
 
 
-<<<<<<< HEAD
+
 	    					// $(image).mouseover(function(){
 	    					// 	$(image).click(function(){
 	    					// 		$('view').fadeIn('slow');
 	    					// 	});
-=======
+
 	    					// $(image).hover(function(){
 	    					// 	// $(this).popover('view');
->>>>>>> c7ad15c5721699446e8b8c9437489f1ebc35c8d6
+
 
 	    					// });
 	    					// console.log(overview);
