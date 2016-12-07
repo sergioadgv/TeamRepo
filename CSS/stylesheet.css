@@ -4,6 +4,25 @@
 	border: 1px solid black;
 }*/
 
+h2{
+	color: white;
+}
+.catfont1{
+	font: 36pt underline bold;
+	color: white;
+}
+.catfont2{
+	font: 36pt underline bold;
+	color: black;
+}
+.stripe1{
+	background-color: black;
+	padding: 10px;
+}
+.stripe2{
+	background-color: silver;
+	padding: 10px;
+}
 .header {
 	height: 120px;
 	border: 1px solid black;
@@ -40,12 +59,6 @@
 .hidden{
 	display: none;
 }
-/*#photo-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap:wrap;
-}*/
-
 .trigger{
 	text-align: center;
 	background-color: red;
@@ -56,7 +69,7 @@
 	color: black;
 }
 
-.carousel-caption p {
+.carousel-caption p 2
 	color: black; 
 	font-size: 150%;
 }
@@ -67,13 +80,28 @@
 
 
 .view{
+<<<<<<< HEAD
 	width: 200px;
 	height:200px;
 	border: 1px solid black;
 	background-color: blue;
 	display: inline-block;
+=======
+	width: 250px;
+	height:300px;
+	border: 3px solid black;
+	background-color: silver;
 }
-
+.containers{
+	margin-left: 80px;
+}
+.footer{
+	background: black;
+	color: white;
+	padding-right: 0 auto;
+	padding-left: 0 auto;
+>>>>>>> c7ad15c5721699446e8b8c9437489f1ebc35c8d6
+}
 ./*hoverinfo {
   position: absolute;
   top: 15px;
