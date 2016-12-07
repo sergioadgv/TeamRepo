@@ -134,24 +134,31 @@ $( document ).ready(function() {
 
 //begin slider
 
-// $(document).ready(function(){
+ $(document).ready(function(){
 
-// 	console.log("Did you get the memo");
+ 	console.log("Did you get the memo");
 
-// 	$("#menu-trigger").click(function(){
+ 	$("#menu-trigger").click(function(){
 
-// 		$(".slide-in-menu").animate({width: 'toggle'});
+ 		$(".slide-in-menu").animate({width: 'toggle'});
 
-// 		$(this).toggleClass("white");
+ 		$("#navbar").toggleClass("hidden");
 
-// 	});
+ 	});
 
-// 	$("#dropper").click(function(){
-// 		$(this).toggleClass("open");
-// 	});
+ 	$("#dropper").click(function(){
+ 		$(this).toggleClass("open");
+ 	});
 
-// 	console.log("Js complete!");
+ 	$("#close").click(function(){
 
-// })
+ 		$(".slide-in-menu").animate({width: 'toggle'});
+
+ 		$("#navbar").toggleClass("hidden");
+ 	})
+
+ 	console.log("Js complete!");
+
+ })
 
 //end slider

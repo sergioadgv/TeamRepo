@@ -120,22 +120,33 @@ h2{
 
 /*begin slider */
 
-/*.slide-in-menu{
+.full-height{
+	height: 100%;
+}
+
+.hidden{
+	display: none;
+}
+
+.slide-in-menu{
 	background-color: black;
 	color: white;
 	height: 100%;
 	width: 20%;
 	position: fixed;
 	top: 0;
-	display: inline-block;
+	display: none;
 	padding-left: 3%;
 	padding-top: 1%;
 	z-index: 1;
+	margin-right: -20%;
 }
 
 #menu-trigger{
 	margin: 1%;
-	z-index: 1;
+	vertical-align: middle;
+	padding-top: 1%;
+	padding-bottom: 1.5%;
 }
 
 .white{
@@ -162,6 +173,6 @@ a {
 
 .menu-footer{
 	margin-top: auto;
-}*/
+}
 
-/*end slider*/
+/*end slider
