@@ -32,7 +32,7 @@ $( document ).ready(function() {
 							var image = $(document.createElement('img'));
 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
 	    					// image.attr('class', thumbnail);
-	    					image.addClass('.view');
+	    					image.addClass('view');
 	    					image.appendTo('#scifiphoto-container'); 
 
 	    					// var overview = item.overview;
@@ -42,10 +42,10 @@ $( document ).ready(function() {
 	    					// overview.appendTo('.view');
 
 
-	    					$(image).hover(function(){
-	    						// $(this).popover('view');
+	    					// $(image).hover(function(){
+	    					// 	// $(this).popover('view');
 
-	    					});
+	    					// });
 	    					// console.log(overview);
 
 	    					// overview.addClass('.view');
@@ -61,7 +61,6 @@ $( document ).ready(function() {
 			$.ajax({
 					url: 'http://api.themoviedb.org/3/search/movie?api_key=76289adfaff9f754d64a41b22a008043&query=war',
 					method: 'GET',
-					// contentType: 'application/json',
 					data: {
 						type:'movie',
 			            r: 'json',
@@ -72,7 +71,7 @@ $( document ).ready(function() {
 							var url = item.poster_path;
 							var image = $(document.createElement('img'));
 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
-	    					// image.attr('class', thumbnail);
+							image.addClass('view');
 	    					image.appendTo('#warphoto-container'); 
 						});
 				
@@ -95,7 +94,7 @@ $( document ).ready(function() {
 							var url = item.poster_path;
 							var image = $(document.createElement('img'));
 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
-	    					// image.attr('class', thumbnail);
+							image.addClass('view');
 	    					image.appendTo('#romancephoto-container'); 
 						});
 				
@@ -103,11 +102,7 @@ $( document ).ready(function() {
 });
 					});
 
-// var url = item.title;
-							// var title = $(document.createElement('h3'));
-							// title(title);
-	    		// 			// image.attr('class', thumbnail);
-	    		// 			title.appendTo('#photo-container');
+
 $( document ).ready(function() {
 	$('.carousel').carousel({
 		interval: 3000

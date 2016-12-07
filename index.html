@@ -6,69 +6,45 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>VideoWebsite</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-<!-- 		<link rel="stylesheet" type="text/css" href="JChallengestylesheet"> -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
 	</head>
 	<body>
 
-  <!-- <div>
-    <nav class="navbar navbar-inverse coloured">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">WebSiteName</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a class="font-color" href="#">Home</a></li>
-          <li class="font-color"><a href="#view_1">Movies</a></li>
-          <li class="font-color"><a href="#">Our team</a></li>
-          <li class="font-color"><a href="#">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          <li><a href=""><i class="fa fa-twitter size"></i></a></li>
-          <li><a href=""><i class="fa fa-facebook size"></i></a></li>
-          <li><a href=""><i class="fa fa-instagram size"></i></a></li>
-        </ul>
+		<div class="container-fluid">
+          <nav id="navbar" class="navbar navbar-inverse coloured navbar-fixed-top text-center">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-1">
+                  <span class="glyphicon glyphicon-menu-hamburger" id="#menu-trigger"></span>
+                </div>
+                <div class="col-md-2">
+                  <h2>Our MDB</h2>
+                </div>
+                <div class="col-md-2">
+                   <h3><a href="#AllMovies">All Movies</a></h3>
+                </div>
+                <div class="col-md-2">
+                   <h3><a href="#Scifi">Scifi</a></h3>
+                </div>
+                <div class="col-md-2">
+                   <h3><a href="#War">War</a></h3>
+                </div>
+                <div class="col-md-2">
+                   <h3><a href="#Romance">Romance</a></h3>
+                </div>
+               <!--  <div class="col-md-2">
+                  <a href="#"><span class="glyphicon glyphicon-user"></span><h4>Sign Up</h4></a>
+                  <a href="#"><span class="glyphicon glyphicon-log-in"></span><h4>Login</h4></a>
+                </div> -->
+              </div>
+            </div>
+          </nav><br>
       </div>
-    </nav>
-  </div> -->
 
-		<!--<div class="container-fluid">
-      <nav id="navbar" class="navbar navbar-inverse coloured navbar-fixed-top text-center">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-1">
-              <span class="glyphicon glyphicon-menu-hamburger" id="#menu-trigger"></span>
-            </div>
-            <div class="col-md-2">
-              <h2>Our MDB</h2>
-            </div>
-            <div class="col-md-2">
-               <h3><a href="#MyVision">Movies</a></h3>
-            </div>
-            <div class="col-md-2">
-               <h3><a href="#MyStory">Series</a></h3>
-            </div>
-            <div class="col-md-2">
-               <h3><a href="#Experience&Skills">Other</a></h3>
-            </div>
-            <div class="col-md-2">
-               <h3><a href="#Projects">Our Movie Projects</a></h3>
-            </div>
-            <div class="col-md-2">
-              <a href="#"><span class="glyphicon glyphicon-user"></span><h4>Sign Up</h4></a>
-              <a href="#"><span class="glyphicon glyphicon-log-in"></span><h4>Login</h4></a>
-            </div>
-          </div>
-        </div>
-      </nav><br>
-      </div>-->
+
+<!-- Carousel -->
       <div class="container-fluid">	
         <div class="text-center slide-in-menu"> 
           <div class="text-center">
@@ -133,32 +109,35 @@
     			
 			 	
   	</div>
-        <div id="scifiphoto-container" class="container-fluid">
-          <h1>Sci-Fi</h1>
-
-            
+        <div class="stripe1">
+          <div id="scifiphoto-container" class="container-fluid containers text-center">
+            <h5 class="catfont1">Sci-Fi</h5>
+          </div>
         </div>
-        <div id="warphoto-container" class="container-fluid">
-          <h1>War</h1>
-            
+        <div class="stripe2">
+          <div id="warphoto-container" class="container-fluid containers text-center">
+            <h5 class="catfont2">War</h5>
+          </div>
         </div>
-        <div id="romancephoto-container" class="container-fluid">
-          <h1>Romance</h1>
-            
+        <div class="stripe1">
+          <div id="romancephoto-container" class="container-fluid containers text-center">
+          <h5 class="catfont1">Romance</h5> 
+          </div>
         </div>
-        <button>See More Categories</button>
-        <!-- Just added this to show you what I mean @Lukas this button shows the other categories -->
-
-
         
-	
-  			<div class="row center-block">
-  				<div class="col-xs-4 col-xs-offset-4 trigger">
-	  				That's it. If you have seen everything already I recommend going outside!
-	  			</div>
-	  		</div>
+        <div class="text-center">
+          <button>See More Categories</button>
+        </div>
+
 	  		</div>
   		</div>
+      <div class="row footer text-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+        <h4>Message To Visitors</h4>
+        <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commods,magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</h5>
+        </div>
+      </div>
   		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   		crossorigin="anonymous"></script>
   		<script type="text/javascript" src="js/javascript.js"></script>
