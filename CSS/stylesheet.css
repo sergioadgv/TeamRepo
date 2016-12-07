@@ -73,14 +73,14 @@ h2{
 	color: black;
 }
 
-.carousel-caption p 2
-	color: black; 
-	font-size: 150%;
+.carousel-caption p {
+	font-size: 120%;
 }
 
-.carousel-caption h3 {
-	color:black;
+.grandTour {
+	color:black;	
 }
+
 
 .carousel-inner {
 	align-content: center; 
