@@ -136,7 +136,7 @@ $( document ).ready(function(){
 
  		$(".slide-in-menu").animate({width: 'toggle'});
 
- 		$("#navbar").toggleClass("hidden");
+ 		//$("#navbar").toggleClass("hidden");
 
  	});
 
@@ -148,7 +148,7 @@ $( document ).ready(function(){
 
  		$(".slide-in-menu").animate({width: 'toggle'});
 
- 		$("#navbar").toggleClass("hidden");
+ 		//$("#navbar").toggleClass("hidden");
  	})
 
  	console.log("Js complete!");
