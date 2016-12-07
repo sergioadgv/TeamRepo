@@ -11,24 +11,25 @@ $( document ).ready(function() {
 						response_body.results.forEach(function(item){
 							console.log(item )
 
-							// var url = item.poster_path;
-							// var image = $(document.createElement('img'));
-							// image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
-	    		// 			// image.attr('class', thumbnail);
-	    		// 			// image.addClass('view');
-	    		// 			image.appendTo('#scifiphoto-container'); 
-
-	    					var url = item.poster_path;
+							var url = item.poster_path;
 							var image = $(document.createElement('img'));
 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
-	    					//image.attr('class', thumbnail);
-	    		 			// image.addClass('view');
-	    		 			image.appendTo('#scifiphoto-container'); 
+							$(image).addClass('thumbnail');
+	    					// image.attr('class', thumbnail);
+	    					// image.addClass('view');
+	    					image.appendTo('#scifiphoto-container'); 
 
-		    				// var overview = item.overview;
-		    				var popDiv = $(document.createElement('div'));
-		    				popDiv.addClass('view');
-		    				popDiv.appendTo('#scifiphoto-container');
+	    		// 			var url = item.poster_path;
+							// var image = $(document.createElement('img'));
+							// image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
+	    		// 			//image.attr('class', thumbnail);
+	    		//  			// image.addClass('view');
+	    		//  			image.appendTo('#scifiphoto-container'); 
+
+		    	// 			// var overview = item.overview;
+		    	// 			var popDiv = $(document.createElement('div'));
+		    	// 			popDiv.addClass('view');
+		    	// 			popDiv.appendTo('#scifiphoto-container');
 	    					//  var para = $(document.createElement('p'));
 	    					//  para.appendTo('#scifiphoto-container');
 	    					//  para.text("hello");
@@ -55,7 +56,7 @@ $( document ).ready(function() {
 							var url = item.poster_path;
 							var image = $(document.createElement('img'));
 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
-							// image.addClass('view');
+							$(image).addClass('thumbnail');
 	    					image.appendTo('#warphoto-container'); 
 						});
 				
@@ -78,7 +79,7 @@ $( document ).ready(function() {
 							var url = item.poster_path;
 							var image = $(document.createElement('img'));
 							image.attr('src', 'https://image.tmdb.org/t/p/w154'+url);
-							// image.addClass('view');
+							$(image).addClass('thumbnail');
 	    					image.appendTo('#romancephoto-container'); 
 						});
 				
