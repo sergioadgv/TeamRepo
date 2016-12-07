@@ -7,7 +7,17 @@
 body {
   padding-top: 50px;
 }
+.popclass{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	z-index: 9999;
 
+}
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
 h2{
 	color: white;
 }
@@ -39,15 +49,14 @@ h2{
 }
 
 .thumbnail {
-	width: 178px;
-	height: 240px;
-	border: 1px solid black;
-	border-radius: 1px;
+	width: 200px;
+	height: 270px;
+	border: 1px solid grey;
+	border-radius: 2px;
 	display: inline-block;
-  	justify-content: space-around;
-  	flex-wrap:wrap;
   	margin-left: 5px;
   	margin-bottom: 5px;
+  	padding: 0px;
 }
 
 .tooltip {
